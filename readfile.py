@@ -4,9 +4,9 @@ import json
 
 def extract_word_list_from_json_files(file_path):
     f = open(file_path, "rt")
-    data = json.loads(f.read())
     # array of word
-    # word: word, phoneticRespelling,definition[],example[],synonym[]
+    # word: word, phoneticRespelling,definition[],example[],synonym[]    
+    return json.loads(f.read())
 
 def extract_words_from_files(file_path):
     words = []
@@ -65,6 +65,7 @@ if __name__  == "__main__":
     if error:
         print(error)
     else:
-        words = extract_words_from_files(file_path)
+        words = extract_word_list_from_json_files(file_path)
+        # words = extract_words_from_files(file_path)
         for w in words:
             print("{}".format(w))    

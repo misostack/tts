@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 import sys
+import json
+
+def extract_word_list_from_json_files(file_path):
+    f = open(file_path, "rt")
+    data = json.loads(f.read())
+    # array of word
+    # word: word, phoneticRespelling,definition[],example[],synonym[]
 
 def extract_words_from_files(file_path):
     words = []

@@ -1,4 +1,4 @@
-**{{index}}. {{word}}**
+### {{index}}. {{word}}
 
 **Phonetic respelling**
 

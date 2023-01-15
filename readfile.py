@@ -19,6 +19,30 @@ def extract_words_from_files(file_path):
         print(e)
     return words
 
+
+def get_file_name(file_path):
+    file_path_components = file_path.split('/')
+    file_name_and_extension = file_path_components[-1].rsplit('.', 1)
+    return file_name_and_extension[0]
+
+def read_file_content(file_path):
+    content = ""
+    try:        
+        # opens file for reading in text mode
+        file_handler = open(file_path, "rt")
+        # read lines
+        while True:
+            line = file_handler.readline()
+            if len(line):
+                content = content + "{}".format(line)
+            if not line:
+                break
+        # close
+        file_handler.close()
+    except Exception as e:
+        print(e)
+    return content
+
 def read_file_path_from_command_line():
     file_path, error = "", None
     try:

@@ -1,0 +1,12 @@
+adjective
+adverb
+conjunction
+determiner
+discourse marker
+exclamation
+interrogative
+noun
+possessive
+preposition
+pronoun
+verb

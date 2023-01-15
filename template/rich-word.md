@@ -8,8 +8,11 @@
 
 **Audio**
 
-<JsbaseWordAudio word="{{word_script}}" />
 <JsbaseWordAudio word="{{word}}" />
+
+**Audio Script**
+
+<JsbaseWordAudio word="{{word_script}}" />
 
 **Definition**
 
